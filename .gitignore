@@ -1,0 +1,29 @@
+.venv/
+.vscode/
+
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Training artifacts
+checkpoints/
+backup checkpoints/
+runs/
+diagnostics/
+
+# Large model files
+*.pth
+*.pt
+*.ckpt
+*.onnx
+
+# Large local datasets and generated outputs
+data/samples/
+data/samples_SR/
+data/**/*.tif
+data/**/*.tiff
+
+# Notebook and OS noise
+.ipynb_checkpoints/
+Thumbs.db
+Desktop.ini
