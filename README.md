@@ -1,42 +1,19 @@
-# Deep Learning Project
+# SAR Image Enhancement Using SR, SCUNet, and SwinIR
 
-This repository is intended to host the source code for the project.
+This repository contains the source code for a deep learning project focused on single-image super-resolution for remote sensing and SAR imagery. The project includes data preparation, degradation pipelines, model training, inference, and evaluation for multiple restoration architectures including RRDB, SCUNet, and SwinIR.
 
-Large training artifacts are intentionally not tracked in Git:
+## Repository Contents
+
+- source code for training, inference, and evaluation in `src/`
+- dataset metadata and CSV manifests in `data/`
+- experiment-related scripts and utilities in the project root
+
+## Excluded Artifacts
+
+Large generated artifacts are not tracked in Git, including:
 
 - model checkpoints in `checkpoints/` and `backup checkpoints/`
 - training logs in `runs/`
 - generated diagnostics in `diagnostics/`
-- large GeoTIFF datasets and super-resolved outputs under `data/samples/` and `data/samples_SR/`
-- local virtual environment files in `.venv/`
-
-## Repository policy
-
-GitHub is being used for:
-
-- source code in `src/`
-- small metadata files such as CSV manifests
-- documentation and experiment notes
-
-Large files should be shared separately using one of these approaches:
-
-1. GitHub Releases for a small number of deliverable checkpoints
-2. Git LFS for a few essential model files that must stay tied to the repo
-3. Google Drive, OneDrive, Kaggle, Hugging Face, or another external storage location for datasets and many checkpoints
-
-## Recommended submission setup
-
-For a course or project submission, the safest layout is:
-
-1. Keep this GitHub repository code-only
-2. Upload required checkpoints and sample outputs to external storage
-3. Put the download links in this README
-4. Document which script reproduces training and evaluation
-
-## Next additions
-
-Useful follow-up files to add:
-
-- `requirements.txt` or `environment.yml`
-- a short section describing how to train and evaluate the models
-- links to externally hosted checkpoints and datasets
+- large GeoTIFF datasets and super-resolved outputs in `data/samples/` and `data/samples_SR/`
+- local environment files in `.venv/`
