@@ -1,0 +1,53 @@
+# ── Python ─────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ── Virtual environments / IDE ─────────────────────────
+.venv/
+venv/
+env/
+.vscode/
+.idea/
+
+# ── Training artifacts ─────────────────────────────────
+checkpoints/
+backup checkpoints/
+runs/
+diagnostics/
+eval_images/
+training_log*.txt
+
+# ── Model weights ──────────────────────────────────────
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.safetensors
+
+# ── Large data and generated outputs ───────────────────
+# Keep the CSV manifests in data/ tracked; ignore imagery.
+data/samples*/
+data/train/
+data/val/
+*.tif
+*.tiff
+*.TIF
+*.TIFF
+*_SR/
+Capella_IEEE_DataContest_2026.csv*
+
+# ── Notebooks ──────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS noise ───────────────────────────────────────────
+__MACOSX/
+._*
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Always keep the CSV metadata files in data/ tracked ─
+!data/*.csv

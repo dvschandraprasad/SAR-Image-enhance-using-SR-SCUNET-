@@ -1,0 +1,1 @@
+#venv "Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy Unrestricted -Force
